@@ -1,0 +1,101 @@
+/* ***************** variables ***************** */
+
+:root {
+    --primary-red: #BD3A5A;
+    --off-white: #F8FAFC;
+    --secondary-blue: #005A8F;
+    --tertiary-navy: #002439;
+    --hover-red: #84283F;
+    --h1: 4.5rem;
+    --h2: 2.25rem;
+    --btn: 1.25rem;
+    --link: 1.375rem;
+}
+
+/* ***************** universal styles & containers ***************** */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.125rem;
+    background-color: var(--off-white);
+}
+
+.inner-container {
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 0 6.3125rem;
+}
+
+.flex-container {
+    display: flex;
+    gap: 1.875rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ***************** global typography ***************** */
+
+h1 {
+    font-size: var(--h1);
+    margin-bottom: 1.6875rem;
+}
+
+h2 {
+    font-size: var(--h2);
+}
+
+header a {
+    font-size: var(--btn);
+    text-decoration: none;
+}
+
+main a {
+    font-size: var(--link);
+    color: var(--primary-red);
+}
+
+/* ***************** header ***************** */
+
+nav {
+    background-color: white;
+    padding: .625rem 0;
+}
+
+nav a.btn {
+    background-color: var(--primary-red);
+    color: white;
+    padding: .75rem 1rem;
+}
+
+nav a.btn:hover,
+nav a.btn:focus {
+    background-color: var(--hover-red);
+}
+
+ul a:hover,
+ul a:focus {
+    text-decoration: underline;
+    text-decoration-color: #BD3A5A;
+}
+
+.hero {
+    background-color: var(--secondary-blue);
+    color: var(--off-white);
+    padding: 5.0625rem 0;
+    margin-bottom: 5.0625rem;
+}
+
+.hero p {
+    font-size: var(--h2);
+}
+
+.hero a {
+    padding: .75rem 1rem;
+    border: 1px solid var(--off-white);
+}
+
+.hero a:hover,
+.hero a:focus {
+    color: var(--secondary-blue);
+    background-color: var(--off-white);
+}
