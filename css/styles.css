@@ -28,7 +28,7 @@ body {
 
 .flex-container {
     display: flex;
-    gap: 1.875rem;
+    gap: 2.125rem;
     align-items: center;
     justify-content: space-between;
 }
@@ -37,11 +37,14 @@ body {
 
 h1 {
     font-size: var(--h1);
+    font-weight: bold;
     margin-bottom: 1.6875rem;
 }
 
 h2 {
     font-size: var(--h2);
+    font-weight: normal;
+    text-transform: uppercase;
 }
 
 header a {
@@ -51,6 +54,7 @@ header a {
 
 main a {
     font-size: var(--link);
+    font-weight: bold;
     color: var(--primary-red);
 }
 
@@ -70,6 +74,10 @@ nav a.btn {
 nav a.btn:hover,
 nav a.btn:focus {
     background-color: var(--hover-red);
+}
+
+ul.flex-container {
+    gap: 1.875rem;
 }
 
 ul a:hover,
@@ -98,4 +106,59 @@ ul a:focus {
 .hero a:focus {
     color: var(--secondary-blue);
     background-color: var(--off-white);
+}
+
+/* ***************** main ***************** */
+
+main.flex-container {
+    align-items: unset;
+}
+
+.card,
+aside {
+    background-color: white;
+    padding: 1.6875rem;
+    height: fit-content;
+}
+
+.card:not(:nth-of-type(4)) {
+    margin-bottom: 3.375rem;
+}
+
+.card div div {
+    flex: 1 1 70%;
+}
+
+.card div a {
+    flex: 1 1 30%;
+    text-align: center;
+}
+
+section {
+    flex: 1 1 40%;
+}
+
+aside {
+    flex: 1 1 60%;
+}
+
+aside div.flex-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+aside h2,
+aside div:not(:last-of-type) {
+    margin-bottom: 3.375rem;
+}
+
+/* ***************** footer ***************** */
+
+footer {
+    background-color: var(--tertiary-navy);
+    color: var(--off-white);
+    font-size: 1rem;
+    padding: 3.375rem 5.5rem;
+    margin-top: 5.0625rem;
 }
